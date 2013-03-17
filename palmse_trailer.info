@@ -1,0 +1,15 @@
+name = Palmse trailer
+description = Palsmse trailer theme.
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = style.css
+
+regions[header]         = Header
+regions[navigation]     = Navigation
+regions[help]           = Help
+regions[content]        = Content 1
+regions[content1]        = Content 2
+regions[content2]        = Content 3
+regions[footer]         = Footer
+
+

@@ -1,0 +1,535 @@
+/* Drupal 7 Framework - Created by André Griffin
+------------------------------------------------
+[Table of contents]
+
+ 0.Reset
+ 1.Global
+ 2.Layout
+ 3.Main
+ 4.Header
+ 5.Navigation
+ 6.Nodes
+ 7.Blocks
+ 8.Footer
+9.CSS Support
+
+Font sizes: 16px base font with 24px line-height
+------------------------------------------------
+       font-size / line-height / margin-top
+------------------------------------------------
+40px = 2.5em     / 1.2         / 0.6em
+32px = 2em       / 1.5         / 0.75em
+24px = 1.5em     / 1           / 1em
+20px = 1.25em    / 1.2         / 1.2em
+16px = 1em       / 1..5        / 1.5em
+14px = 0.875em   / 1.7143      / 1.7143em
+13px = 0.8125em  / 1.8462      / 1.8462em
+12px = 0.75em    / 2           / 2em
+10px = 0.625em   / 2.4         / 2.4em
+
+Equation for font sizing: 
+  Desired px ÷ Default (or parent) px = em size
+------------------------------------------------*/
+
+/**
+ * 0.RESET 
+ */
+
+@import "reset.css";
+
+/**
+ * 1.GLOBAL
+ */
+
+body {
+  background: #fff;
+  color: #222;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1, .h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  margin-top: 0.75em;
+}
+
+h2, .h2 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-top: 1em;
+}
+
+h3, .h3 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-top: 1.2em;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 1.5em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 1.5em 0;
+}
+
+a { color: #069; text-decoration: none; }
+
+a:visited { color: #309; }
+
+a:hover, a:active, li a.active  { color: #39f; }
+
+a:focus { outline: thin dotted; }
+
+a:hover, a:active { outline: 0; }
+
+/* apply common styling after reset.css */
+
+li ul, li ol {  margin: 0; }
+ul, ol {  margin: 0 1.5em 1.5em 0;  padding-left: 1.5em; }
+ul {  list-style-type: disc; }
+ol {  list-style-type: decimal; }
+dl {  margin: 0 0 1.5em 0; }
+dl dt {  font-weight: bold; }
+dd {  margin-left: 1.5em; }
+hr {  background: #666;  border: none;  clear: both;  float: none;  height: 1px;  margin: 0 0 1.4375em;  width: 100%; }
+fieldset {  border: 1px solid #ccc;  margin: 0 0 1.4375em;  padding: 1.5em; }
+table {  margin-bottom: 1.5em;  width: 100%; }
+th, tr, td {  vertical-align: middle; }
+th { padding-right: 1em; }
+.sticky-header th, .sticky-table th {  border-bottom: 3px solid #ccc;  padding-right: 1em;  text-align: left; }
+
+/**
+ * 2.LAYOUT
+ */
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+  position: relative;
+}
+
+/**
+ * 3.MAIN
+ */
+
+/* 1 column: global values*/
+
+#main {
+  display: inline;
+  margin: 0;
+}
+
+/**
+ * 4.HEADER
+ */
+
+#header {
+  margin: 0;
+  padding: 2.5em 0 0;
+  position: relative;
+}
+
+#header #site-name-slogan {
+  float: left;
+  margin: 0 0 1.5em;
+}
+
+#header #site-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+#header #site-name a:hover {
+  text-decoration: none;
+}
+
+#header #site-slogan {
+  margin: 0;
+}
+
+.front .view-fronpage-menu {
+  position: absolute;
+  width: 100%; 
+  z-index: 100;
+}
+ .view-fronpage-menu ul li {
+  width: 20%;
+  float: left;
+  list-style-type: none;
+  position: relative;
+  text-align: center;
+  height: 140px;
+}
+ .view-fronpage-menu ul li span {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+.front .view-fronpage-menu ul li.menu-item-0 {
+  bottom: 0px;
+}
+.front .view-fronpage-menu ul li.menu-item-1 {
+  bottom: 50px;
+}
+.front .view-fronpage-menu ul li.menu-item-2 {
+  bottom: 80px;
+}
+.front .view-fronpage-menu ul li.menu-item-3 {
+  bottom: 30px;
+}
+.front .view-fronpage-menu ul li.menu-item-4 {
+  bottom: 20px;
+}
+.front #block-views-fronpage-menu-block {
+  height: 50px;
+}
+
+/**
+ * 5.NAVIGATION
+ */
+
+/*#navigation {
+  clear: both;
+  margin: 0 0 0 -220px;
+  padding: 0;
+  background: url(images/logoandgrass.png) no-repeat;
+  height: 195px;
+}
+.navbg {
+  background: url(images/navbg.png) repeat-x bottom;
+  margin: 0 0 -50px;
+}
+#block-system-main-menu {
+   margin: 0 0 0 420px;
+   padding-top: 60px;
+}*/
+#navigation {
+  background-image: url(images/menubar_bg.png);
+  background-position: center bottom;
+  margin-bottom: -40px;
+  position: relative;
+}
+.front #navigation {
+  background-image: none;
+}
+
+#navbg {
+  background-image: url(images/menubar.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 195px;
+}
+.front #navbg {
+  background-image: url(images/menubar_bg_front.png);
+  height: 295px;
+}
+#navigation .region-navigation {
+  float: left;
+  margin: 100px 0 0 10px;
+}
+.front #navigation .region-navigation {
+  margin: 0 0 0 0;
+  float: none;
+}
+#navigation  ul.ultimenu {
+  clear: both;
+  list-style: none;
+  padding: 0;
+}
+#navigation  ul.ultimenu  li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#navigation  ul.ultimenu  li a {
+  display: block;
+  color: white;
+  font-size: 1.5em;
+  padding: 0 10px;
+  list-style-image: none;
+}
+ul li.leaf {
+   list-style-image: none;
+   list-style: none;
+}
+.front #block-ultimenu-main-menu {
+  position: absolute;
+  top: 160px;
+  z-index: 0;
+}
+.front #block-ultimenu-main-menu ul li {
+  width: 150px;
+  text-align: center;
+}
+.front #block-ultimenu-main-menu ul li.menu-list-3 {
+  margin-left: 280px;
+}
+.breadcrumb {
+  clear: both;
+  padding: 1.5em 0 0;
+}
+
+#skip-link {
+  position: absolute;
+}
+#navigation #logo {
+  float: left;
+  margin: 45px 0 0 -20px;
+}
+.front #navigation #logo  {
+  margin: 75px 0 0 313px;
+  position: relative;
+  z-index: 10;
+}
+
+/* menus and item lists */
+
+.item-list ul {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+}
+
+.item-list ul li {
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+ul.inline {
+  clear: both;
+}
+
+ul.inline li {
+  margin: 0;
+  padding: 0 1em 0 0;
+}
+
+/* admin tabs */
+
+.tabs-wrapper {
+  border-bottom: 1px solid #333;
+  margin: 0 0 1.4375em;
+}
+ul {
+  list-style-type: none;
+}
+ul.primary {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.primary li a {
+  background: none;
+  border: none;
+  display: block;
+  float: left;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0 1em;
+}
+
+ul.primary li a:hover, ul.primary li a.active {
+  background: #666;
+  border: none;
+  color: #fff;
+}
+
+ul.primary li a:hover {
+  background: #888;
+  text-decoration: none;
+}
+
+ul.secondary {
+  background: #666;
+  border-bottom: none;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+ul.secondary li {
+  border-right: none;
+}
+
+ul.secondary li a, ul.secondary li a:link {
+  border: none;
+  color: #ccc;
+  display: block;
+  float: left;
+  line-height: 1.5em;
+  padding: 0 1em;
+}
+
+ul.secondary li a:hover, ul.secondary li a.active {
+  background: #888;
+  color: #fff;
+  text-decoration: none;
+}
+
+ul.secondary a.active {
+  border-bottom: none;
+}
+
+/**
+ * 6.NODES
+ */
+
+.node {
+  margin-bottom: 1.5em;
+}
+
+/* tags */
+
+.field-name-field-tags {
+  margin: 0 0 1.5em;
+}
+
+.field-name-field-tags .field-item {
+  margin: 0 1em 0 0;
+}
+
+.field-name-field-tags div {
+  display: inline;
+}
+
+/* profile */
+
+.profile {
+  margin: 1.5em 0;
+}
+
+.profile h3 {
+  border: none;
+}
+
+.profile dt {
+  margin-bottom: 0;
+}
+
+.profile dd {
+  margin-bottom: 1.5em;
+}
+
+.password-parent {
+  width: 36em;
+}
+
+/**
+ * 7.BLOCKS
+ */
+
+.block {
+  margin-bottom: 1.5em;
+}
+
+/**
+ * 8.FOOTER
+ */
+
+#footer {
+  clear: both;
+  padding: 1.5em 0;
+  position: relative;
+  background-color: black;
+  color: #939393;
+}
+
+#footer a.feed-icon {
+  position: absolute;
+  right: 0;
+  top: 1.6667em;
+}
+
+/**
+ * 9.CSS SUPPORT
+ *
+ * Built-in classes:
+ * .clearfix                            | contain floats
+ * .element-invisible                   | hide element visually
+ * .element-invisible.element-focusable | allow element to be focusable when navigated to via keyboard
+ * .element-hidden                      | hide visually and from screenreaders
+ */
+ 
+/* clear floats */
+.clear { clear: both; }
+
+/* display block */
+.display-block { display: block; }
+
+/** content */
+
+.content1 {
+  background-color: #dedbb2;
+  padding-top: 40px;
+}
+.content2 {
+  background-color: #929451;
+  padding: 30px;
+}
+.content3 {
+  background-color: #c7c59d;
+}
+.view-product-table tr {
+  background-color: transparent;
+  border-bottom: none;
+}
+.view-product-table td, .view-product-table thead th div {
+  background-color: transparent;
+  padding: 4px;
+  border-left: 2px white solid;
+}
+.view-product-table thead th div {
+  margin-left: -1px;
+}
+.align-left {
+  float: left;
+}
+.align-right {
+  float: right;
+}
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
+}
+.file-full-content-right {
+  float: right;
+}
+.file-full-content-left {
+  float: left;
+}
+ul#field-slideshow-1-pager li {
+  width: 112px;
+  text-align: center;
+}
+.field-slideshow-slide, .field-slideshow-slide a, .field-slideshow-slide img {
+  max-width: 450px;
+}
+#block-block-1 {
+  width: 610px;
+  margin-left: 180px;
+}
