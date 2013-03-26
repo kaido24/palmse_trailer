@@ -553,7 +553,8 @@ ul.secondary a.active {
 
 .content1 {
   background-color: #dedbb2;
-  padding-top: 40px;
+  padding: 40px 0;
+  background: url('images/grass.png') center bottom no-repeat;
 }
 .content2 {
   background-color: #929451;
