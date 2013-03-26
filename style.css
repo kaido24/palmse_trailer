@@ -42,7 +42,7 @@ Equation for font sizing:
  */
 
 body {
-  background: #fff;
+  background: #DEDBB2;
   color: #222;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 100%;
@@ -149,11 +149,20 @@ th { padding-right: 1em; }
   background: url(images/header-repeatable.png) center;
   height: 255px;
   position: absolute;
+  z-index: 0;
   width: 100%;
 }
+.front .header-bg-land {
+  background: url(images/front_backgroud_land.png) repeat-x;
+  height: 350px;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+}
 .front .header-bg {
-  height: 370px;
-  }
+  height: 500px;
+}
 #header #site-name-slogan {
   float: left;
   margin: 0 0 1.5em;
@@ -249,7 +258,7 @@ th { padding-right: 1em; }
 }
 .front #navbg {
   background-image: url(images/menubar_bg_front.png);
-  height: 295px;
+  height: 290px;
 }
 #navigation .region-navigation {
   float: left;
