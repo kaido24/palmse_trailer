@@ -247,6 +247,12 @@ ul.language-switcher-locale-url li.lt {
   margin: 0 auto;
   display: block;
 }
+ .view-fronpage-menu ul li a {
+  color: #000;
+}
+ .view-fronpage-menu ul li a:hover {
+  color: #fff;
+}
 .front .view-fronpage-menu ul li.menu-item-0 {
   bottom: 0px;
 }
