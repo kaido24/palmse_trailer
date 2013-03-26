@@ -178,7 +178,7 @@ ul.language-switcher-locale-url li {
   float: right;
 }
 ul.language-switcher-locale-url li {
-  text-indent: 9999px;
+  text-indent: -9999px;
   width: 25px;
   margin: 5px;
 }
