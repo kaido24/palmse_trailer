@@ -1,5 +1,5 @@
 
-<span class="header-bg"><span>
+<span class="header-bg"></span>
 <div id="skip-link">
   <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   <?php if ($main_menu): ?>

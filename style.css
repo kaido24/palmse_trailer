@@ -144,30 +144,74 @@ th { padding-right: 1em; }
   margin: 0;
   padding: 2.5em 0 0;
   position: relative;
+  height: 220px;
+}
+.front #header {
+  height: 350px;
+
 }
 .header-bg {
   background: url(images/header-repeatable.png) center;
-  height: 255px;
+  height: 350px;
   position: absolute;
   z-index: 0;
   width: 100%;
 }
 .front .header-bg-land {
   background: url(images/front_backgroud_land.png) repeat-x;
-  height: 350px;
+  height: 280px;
   width: 100%;
   z-index: 1;
   position: absolute;
   bottom: 0px;
 }
 .front .header-bg {
-  height: 500px;
+  height: 530px;
 }
 #header #site-name-slogan {
   float: left;
   margin: 0 0 1.5em;
 }
-
+ul.language-switcher-locale-url li {
+  float: left;
+  display: inline;
+  float: right;
+}
+ul.language-switcher-locale-url li {
+  text-indent: 9999px;
+  width: 25px;
+  margin: 5px;
+}
+ul.language-switcher-locale-url li a {
+  display: block;
+}
+ul.language-switcher-locale-url li.en {
+  background: url('images/flags/en.png') no-repeat;
+}
+ul.language-switcher-locale-url li.de {
+  background: url('images/flags/de.png') no-repeat;
+}
+ul.language-switcher-locale-url li.et {
+  background: url('images/flags/et.png') no-repeat;
+}
+ul.language-switcher-locale-url li.fi {
+  background: url('images/flags/fi.png') no-repeat;
+}
+ul.language-switcher-locale-url li.pl {
+  background: url('images/flags/pl.png') no-repeat;
+}
+ul.language-switcher-locale-url li.se {
+  background: url('images/flags/se.png') no-repeat;
+}
+ul.language-switcher-locale-url li.ru {
+  background: url('images/flags/ru.png') no-repeat;
+}
+ul.language-switcher-locale-url li.lv {
+  background: url('images/flags/ru.png') no-repeat;
+}
+ul.language-switcher-locale-url li.lt {
+  background: url('images/flags/ru.png') no-repeat;
+}
 #header #site-name {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5em;
@@ -188,6 +232,7 @@ th { padding-right: 1em; }
   position: absolute;
   width: 100%; 
   z-index: 100;
+  bottom: 0;
 }
  .view-fronpage-menu ul li {
   width: 20%;
@@ -217,10 +262,16 @@ th { padding-right: 1em; }
 .front .view-fronpage-menu ul li.menu-item-4 {
   bottom: 20px;
 }
-.front #block-views-fronpage-menu-block {
-  height: 50px;
+#block-locale-language {
+  position: relative;
+  z-index: 3;
+  top: 100px;
 }
-
+.front #block-views-fronpage-menu-block {
+  height: 420px;
+  position: relative;
+  z-index: 0;
+}
 /**
  * 5.NAVIGATION
  */
