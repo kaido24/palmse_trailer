@@ -145,7 +145,15 @@ th { padding-right: 1em; }
   padding: 2.5em 0 0;
   position: relative;
 }
-
+.header-bg {
+  background: url(images/header-repeatable.png) center;
+  height: 255px;
+  position: absolute;
+  width: 100%;
+}
+.front .header-bg {
+  height: 370px;
+  }
 #header #site-name-slogan {
   float: left;
   margin: 0 0 1.5em;
