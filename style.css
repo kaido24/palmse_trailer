@@ -207,10 +207,10 @@ ul.language-switcher-locale-url li.ru {
   background: url('images/flags/ru.png') no-repeat;
 }
 ul.language-switcher-locale-url li.lv {
-  background: url('images/flags/ru.png') no-repeat;
+  background: url('images/flags/lv.png') no-repeat;
 }
 ul.language-switcher-locale-url li.lt {
-  background: url('images/flags/ru.png') no-repeat;
+  background: url('images/flags/lt.png') no-repeat;
 }
 #header #site-name {
   font-family: Arial, Helvetica, sans-serif;
@@ -270,7 +270,7 @@ ul.language-switcher-locale-url li.lt {
 .front #block-views-fronpage-menu-block {
   height: 420px;
   position: relative;
-  z-index: 0;
+  z-index: 10;
 }
 /**
  * 5.NAVIGATION
