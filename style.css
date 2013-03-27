@@ -558,9 +558,11 @@ ul.secondary a.active {
 /** content */
 
 .content1 {
-  background-color: #dedbb2;
   padding: 40px 0;
-  background: url('images/grass.png') center bottom no-repeat;
+  background: url('images/grass.png') center bottom no-repeat #dedbb2;
+}
+.front .content1 {
+  background: url('images/frontgradient.png') top repeat-x  #b1aba3;
 }
 .content2 {
   background-color: #929451;
