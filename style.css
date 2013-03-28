@@ -615,3 +615,10 @@ ul#field-slideshow-1-pager li {
   line-height: 0.1em;
   margin-top: 0;
 }
+  @media all and (max-width: 59em) {
+  .ultimenu > li,
+  .ultimenu > li > a {
+    min-width: 150px;
+    width: 150px;
+  }
+}
