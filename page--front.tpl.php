@@ -50,11 +50,9 @@
   </div>
   <?php } ?>
 </section> <!-- /#main -->
-<?php if (!drupal_is_front_page()) { ?>
 <footer id="footer" role="contentinfo" class="clearfix">
   <div class="clearfix container">
     <?php print render($page['footer']) ?>
     <?php print $feed_icons ?>
   </div>
 </footer> <!-- /#footer -->
-<?php } ?>
