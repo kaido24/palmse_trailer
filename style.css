@@ -609,3 +609,9 @@ ul#field-slideshow-1-pager li {
   width: 610px;
   margin-left: 180px;
 }
+#page-title {
+  text-indent: -9999px;
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-top: 0;
+}
