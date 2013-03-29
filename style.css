@@ -531,7 +531,9 @@ ul.secondary a.active {
   background-color: black;
   color: #939393;
 }
-
+.front #footer {
+  background: #7F766C;
+}
 #footer a.feed-icon {
   position: absolute;
   right: 0;
