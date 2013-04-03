@@ -87,11 +87,11 @@ p {
   margin: 0 0 1.5em 0;
 }
 
-a { color: #069; text-decoration: none; }
+a { color: #000; text-decoration: none; }
 
-a:visited { color: #309; }
+a:visited { color: #000; }
 
-a:hover, a:active, li a.active  { color: #39f; }
+a:hover, a:active, li a.active  { color: #000; }
 
 a:focus { outline: thin dotted; }
 
