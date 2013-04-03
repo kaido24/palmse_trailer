@@ -301,9 +301,11 @@ ul.language-switcher-locale-url li.lt {
   background-position: center bottom;
   margin-bottom: -40px;
   position: relative;
+  min-width: 960px;
 }
 .front #navigation {
   background-image: url(images/front_menu_repeat.png);
+  min-width: 960px;
 }
 
 #navbg {
