@@ -195,8 +195,7 @@ ul.language-switcher-locale-url li.et {
 }
 ul.language-switcher-locale-url li.fi {
   background: url('images/flags/fi.png') no-repeat;
-}
-ul.language-switcher-locale-url li.pl {
+}ul.language-switcher-locale-url li.pl {
   background: url('images/flags/pl.png') no-repeat;
 }
 ul.language-switcher-locale-url li.se {
@@ -301,7 +300,6 @@ ul.language-switcher-locale-url li.lt {
   background-position: center bottom;
   margin-bottom: -40px;
   position: relative;
-  min-width: 960px;
 }
 .front #navigation {
   background-image: url(images/front_menu_repeat.png);
@@ -532,9 +530,7 @@ ul.secondary a.active {
   background-color: black;
   color: #939393;
 }
-.front #footer {
-  background: #7F766C;
-}
+
 #footer a.feed-icon {
   position: absolute;
   right: 0;
@@ -612,11 +608,11 @@ ul#field-slideshow-1-pager li {
   width: 610px;
   margin-left: 180px;
 }
-.front #page-title {
+#page-title {
+  text-indent: -9999px;
   font-size: 2em;
   line-height: 0.1em;
   margin-top: 0;
-  text-indent: -9999px;
 }
   @media all and (max-width: 59em) {
   .ultimenu > li,
