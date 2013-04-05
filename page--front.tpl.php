@@ -14,7 +14,7 @@
   <nav id="navigation" role="navigation" class="clearfix">
     <div id="navbg">
       <div class="clearfix container">
-        <a href="/"><img id="logo" src="<?php echo base_path() ?>sites/all/themes/palmse_trailer/images/palmse_trailer_logo_big.png"></a>
+        <a href="<?php echo base_path() . $language->language; ?>"><img id="logo" src="<?php echo base_path() ?>sites/all/themes/palmse_trailer/images/palmse_trailer_logo_big.png"></a>
         <?php print render($page['navigation']); ?>
       </div>
     </div>
