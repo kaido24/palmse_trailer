@@ -564,7 +564,7 @@ ul.secondary a.active {
 
 .content1 {
   padding: 40px 0;
-  background: url('images/grass.png') center bottom no-repeat #dedbb2;
+  background: #dedbb2;
 }
 .front .content1 {
   background: url('images/frontgradient.png') top repeat-x  #b1aba3;
@@ -574,13 +574,19 @@ ul.secondary a.active {
   padding: 30px;
 }
 .content3 {
-  background-color: #c7c59d;
+  background: url('images/grass.png') center bottom no-repeat #c7c59d;
 }
-.view-product-table tr {
+#field_mashine_id-label {
+  text-indent: -10000px;
+}
+.view-product-table tr,
+.field-name-field-specifications tr {
   background-color: transparent;
   border-bottom: none;
 }
-.view-product-table td, .view-product-table thead th div {
+.view-product-table td,
+.field-name-field-specifications td,
+ .view-product-table thead th div {
   background-color: transparent;
   padding: 4px;
   border-left: 2px white solid;
