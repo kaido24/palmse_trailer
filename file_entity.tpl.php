@@ -66,7 +66,7 @@
  * @see template_process()
  */
 ?>
-<?php if (arg(0) != 'nid') { ?>
+<?php if (arg(0) != 'node') { ?>
 <div id="file-<?php print $file->fid ?>" class="<?php print $classes ?>"<?php print $attributes; ?>>
 
   <?php if (!$page): ?>
