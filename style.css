@@ -27,12 +27,12 @@ Font sizes: 16px base font with 24px line-height
 12px = 0.75em    / 2           / 2em
 10px = 0.625em   / 2.4         / 2.4em
 
-Equation for font sizing: 
+Equation for font sizing:
   Desired px ÷ Default (or parent) px = em size
 ------------------------------------------------*/
 
 /**
- * 0.RESET 
+ * 0.RESET
  */
 
 @import "reset.css";
@@ -229,7 +229,7 @@ ul.language-switcher-locale-url li.lt {
 
 .front .view-fronpage-menu {
   position: absolute;
-  width: 100%; 
+  width: 100%;
   z-index: 100;
   bottom: 0;
 }
@@ -553,7 +553,7 @@ ul.secondary a.active {
  * .element-invisible.element-focusable | allow element to be focusable when navigated to via keyboard
  * .element-hidden                      | hide visually and from screenreaders
  */
- 
+
 /* clear floats */
 .clear { clear: both; }
 
@@ -576,6 +576,7 @@ ul.secondary a.active {
 .content3 {
   background: url('images/grass.png') center bottom no-repeat #c7c59d;
 }
+
 #field_mashine_id-label {
   text-indent: -10000px;
 }
@@ -586,7 +587,7 @@ ul.secondary a.active {
 }
 .view-product-table td,
 .field-name-field-specifications td,
- .view-product-table thead th div {
+.view-product-table thead th div  {
   background-color: transparent;
   padding: 4px;
   border-left: 2px white solid;
