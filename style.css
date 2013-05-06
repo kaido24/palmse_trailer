@@ -574,9 +574,12 @@ ul.secondary a.active {
   padding: 30px;
 }
 .content3 {
-  background: url('images/grass.png') center bottom no-repeat #c7c59d;
+   padding-top: 1px;
+   background: url('images/grass.png') center bottom no-repeat #c7c59d;
 }
-
+.content3 .container {
+  padding-bottom: 20px;
+}
 #field_mashine_id-label {
   text-indent: -10000px;
 }
@@ -634,4 +637,19 @@ ul#field-slideshow-1-pager li {
     min-width: 150px;
     width: 150px;
   }
+}
+.views-slideshow-cycle-main-frame-row-item.views-row {
+    float: left;
+    width: 188px;
+}
+#views_slideshow_cycle_div_related_products-block_1_0 {
+  float: left;
+  width: 100%;
+  margin-left: 5px;
+}
+#views_slideshow_controls_text_pause_related_products-block_1 {
+    display: none;
+}
+#views_slideshow_cycle_main_related_products-block_1 {
+margin-top: 30px;
 }
