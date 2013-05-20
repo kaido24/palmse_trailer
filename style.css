@@ -607,9 +607,11 @@ ul.secondary a.active {
 }
 .file-full-content-right {
   float: right;
+  margin: 5px;
 }
 .file-full-content-left {
   float: left;
+  margin: 5px;
 }
 ul#field-slideshow-1-pager li {
   width: 112px;
