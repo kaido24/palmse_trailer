@@ -66,7 +66,7 @@
  * @see template_process()
  */
 ?>
-<?php if (arg(0) != 'node') { ?>
+<?php if (arg(0) != 'node' || arg(0) != 'taxonomy') { ?>
 <div id="file-<?php print $file->fid ?>" class="<?php print $classes ?>"<?php print $attributes; ?>>
 
   <?php if (!$page): ?>
@@ -93,7 +93,7 @@
   <?php print render($content['links']); ?>
 
 </div>
- <?php } elseif (arg(0) == 'node') { ?>
+ <?php } elseif (arg(0) == 'node' || [field_pictures]) { ?>
   <?php
     // We hide the links now so that we can render them later.
     hide($content['links']);

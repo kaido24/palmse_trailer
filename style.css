@@ -608,8 +608,8 @@ ul.secondary a.active {
   position: absolute;
   bottom: 0;
 }
-.img.align-left, img.align-right {
-  margin: 5px;
+a.align-left img, a.align-right img {
+  margin: 8px;
 }
 .file-full-content-right {
   float: right;
