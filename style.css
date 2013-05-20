@@ -608,6 +608,9 @@ ul.secondary a.active {
   position: absolute;
   bottom: 0;
 }
+.img.align-left, img.align-right {
+  margin: 5px;
+}
 .file-full-content-right {
   float: right;
 }
