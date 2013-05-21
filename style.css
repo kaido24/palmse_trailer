@@ -656,3 +656,13 @@ ul#field-slideshow-1-pager li {
 #views_slideshow_cycle_main_related_products-block_1 {
 margin-top: 30px;
 }
+#views_slideshow_controls_text_previous_related_products-block_1 {
+  position: absolute;
+  left: 0;
+}
+
+#views_slideshow_controls_text_next_related_products-block_1 {
+   position: absolute;
+   right: 0;
+}
+
