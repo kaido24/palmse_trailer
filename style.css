@@ -50,6 +50,9 @@ body {
   margin: 0;
   padding: 0;
 }
+body.front {
+  background: #898278;
+}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
@@ -141,20 +144,20 @@ th { padding-right: 1em; }
 
 #header {
   margin: 0;
-  padding: 2.5em 0 0;
   position: relative;
-  height: 220px;
+  height: 60px;
 }
 .front #header {
-  height: 350px;
+  height: 230px;
 
 }
 .header-bg {
   background: url(images/header-repeatable.jpg) center;
-  height: 350px;
+  height: 200px;
   position: absolute;
   z-index: 0;
   width: 100%;
+  top: 0;
 }
 .front .header-bg-land {
   background: url(images/front_backgroud_land.png) repeat-x;
@@ -165,7 +168,7 @@ th { padding-right: 1em; }
   bottom: 0px;
 }
 .front .header-bg {
-  height: 530px;
+  height: 400px;
 }
 #header #site-name-slogan {
   float: left;
@@ -199,8 +202,8 @@ ul.language-switcher-locale-url li.fi {
 ul.language-switcher-locale-url li.pl {
   background: url('images/flags/pl.png') no-repeat;
 }
-ul.language-switcher-locale-url li.se {
-  background: url('images/flags/se.png') no-repeat;
+ul.language-switcher-locale-url li.sv {
+  background: url('images/flags/sv.png') no-repeat;
 }
 ul.language-switcher-locale-url li.ru {
   background: url('images/flags/ru.png') no-repeat;
@@ -232,6 +235,10 @@ ul.language-switcher-locale-url li.lt {
   width: 100%;
   z-index: 100;
   bottom: 0;
+}
+.front .view-fronpage-menu img:hover {
+  width: 170px;
+  height: auto;
 }
  .view-fronpage-menu ul li {
   width: 20%;
@@ -270,10 +277,9 @@ ul.language-switcher-locale-url li.lt {
 #block-locale-language {
   position: relative;
   z-index: 11;
-  top: 100px;
 }
 .front #block-views-fronpage-menu-block {
-  height: 420px;
+  height: 320px;
   position: relative;
   z-index: 10;
 }
@@ -355,23 +361,25 @@ ul li.leaf {
   width: 150px;
   text-align: center;
 }
-.front #block-ultimenu-main-menu ul li.menu-list-3 {
+.front #block-ultimenu-main-menu ul li.menu-list-1 {
+  display: none;
+}
+.front #block-ultimenu-main-menu ul li.menu-list-4 {
   margin-left: 280px;
 }
 .breadcrumb {
   clear: both;
   padding: 1.5em 0 0;
 }
-
 #skip-link {
   position: absolute;
 }
 #navigation #logo {
   float: left;
-  margin: 45px 0 0 -20px;
+  margin: 48px 0 0 -20px;
 }
 .front #navigation #logo  {
-  margin: 75px 0 0 313px;
+  margin: 73px 0 0 315px;
   position: relative;
   z-index: 10;
 }
@@ -532,12 +540,14 @@ ul.secondary a.active {
   background-color: black;
   color: #939393;
 }
+
 #footer a, #footer a:visited {
   color: #939393;
 }
 .front #footer {
   background: #7F766C;
-}
+  display:none;
+}  
 #footer a.feed-icon {
   position: absolute;
   right: 0;
@@ -567,6 +577,7 @@ ul.secondary a.active {
   background: #dedbb2;
 }
 .front .content1 {
+  min-height:200px;
   background: url('images/frontgradient.png') top repeat-x  #b1aba3;
 }
 .content2 {
@@ -658,11 +669,52 @@ margin-top: 30px;
 }
 #views_slideshow_controls_text_previous_related_products-block_1 {
   position: absolute;
-  left: 0;
+  left: -165px;
+  background: url('images/PT_nool_vasak.png');
+  height: 170px;
+  width: 170px;
+  text-indent: -99999px;
+  top: 28px;
 }
-
+#views_slideshow_controls_text_previous_related_products-block_1:hover {
+  background: url('images/PT_nool_vasak_hover.png');
+}
 #views_slideshow_controls_text_next_related_products-block_1 {
-   position: absolute;
-   right: 0;
+  position: absolute;
+  right: -160px;
+  background: url('images/PT_nool_parem.png');
+  height: 170px;
+  width: 170px;
+  text-indent: -99999px;
+  top: 28px;
 }
-
+#views_slideshow_controls_text_next_related_products-block_1:hover {
+  background: url('images/PT_nool_parem_hover.png');
+}
+.view-taxonomy-related-nodes ul {
+  margin: 0;
+  padding: 0;
+}
+#block-views-taxonomy-related-nodes-block-1 .product-list li.views-row {
+  float: left;
+  width: 450px;
+  margin: 2px 2px 20px;
+  padding: 6px;
+  border: 1px solid #DBCB96;
+}
+#block-views-taxonomy-related-nodes-block-1 .node {
+  margin: 0;
+}
+.view-taxonomy-related-nodes h2 {
+  float: left;
+  margin: 0 10px;
+}
+@media (max-width: 940px) {
+  #navigation .container {
+    width: 100%;
+  }
+  .ultimenu > li, .ultimenu > li > a {
+    min-width: 50px;
+    width: auto;
+  }
+}
